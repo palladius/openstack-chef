@@ -23,7 +23,7 @@ if image_list then
         done
         DIR=$(mktemp -d)
         curl #{img[:url]} -o $DIR/image
-        if glance add name="#{img[:name]}" disk_format=#{img[:disk_format]} container_format=#{img[:container_format]} is_public=True < $DIR/image; then
+        if glance add name="#{img[:name]}" disk_format=#{img[:disk_format]} container_format=#{img[:container_format]} is_public=True --silent-upload < $DIR/image; then
             touch /var/lib/glance/chef_images_loaded
         fi
         rm $DIR/image
