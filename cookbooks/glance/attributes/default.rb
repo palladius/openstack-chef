@@ -1,6 +1,6 @@
 default[:glance][:api_config_file]="/etc/glance/glance-api.conf"
 default[:glance][:api_paste_config_file]="/etc/glance/glance-api-paste.ini"
-default[:glance][:api_flavor]="keystone+cachemanagement"
+default[:glance][:api_flavor]="caching"
 default[:glance][:cache_config_file]="/etc/glance/glance-cache.conf"
 default[:glance][:registry_config_file]="/etc/glance/glance-registry.conf"
 default[:glance][:registry_paste_config_file]="/etc/glance/glance-registry-paste.ini"
