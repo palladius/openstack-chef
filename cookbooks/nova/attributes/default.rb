@@ -22,9 +22,6 @@
 default[:nova][:hostname] = hostname
 default[:nova][:install_type] = "binary"
 default[:nova][:compute_connection_type] = "qemu"
-default[:nova][:creds][:user] = "root"
-default[:nova][:creds][:group] = "root"
-default[:nova][:creds][:dir] = "/root"
 default[:nova][:my_ip] = ipaddress
 default[:nova][:iscsi_ip_prefix] = ipaddress.split('.')[0..2].join('.')
 default[:nova][:public_interface] = "eth1"
