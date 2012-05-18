@@ -84,7 +84,7 @@ add_flag(:least_cost_functions)
 <% @flags.each do |flag| %>
 <%= flag %>
 <% end %>
-<% if @sql_connection %>--sql_connection=<%= @sql_connection %><% end %>
+<% if @sql_connection %>sql_connection=<%= @sql_connection %><% end %>
 sql_idle_timeout=<%= node[:nova][:db][:sql_idle_timeout] %>
 <% if @rabbit_settings %>
 rabbit_host=<%= @rabbit_settings[:address] %>
