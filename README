@@ -1,9 +1,14 @@
 = Openstack Cookbooks
 
 A set of Chef cookbooks for Openstack.
+Riccardo wants to use and edit
 
 == Description
 
 Chef cookbooks for nova, glance, mysql, etc.
 
 Currently supports libvirt and XenServer Nova deployments.
+
+== Thanks
+
+To the openstack team.
